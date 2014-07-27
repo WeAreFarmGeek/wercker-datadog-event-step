@@ -25,10 +25,10 @@ fi
 
 
 curl  -X POST -H "Content-type: application/json" \
--d '{
-      "title":       "$WERCKER_DATADOG_EVENT_TITLE",
-      "text":        "$WERCKER_DATADOG_EVENT_TEXT",
-      "priority":    "$WERCKER_DATADOG_EVENT_PRIORITY",
-      "alert_type":  "$WERCKER_DATADOG_EVENT_ALERT_TYPE"
-  }' \
-'https://app.datadoghq.com/api/v1/events?api_key=$WERCKER_DATADOG_EVENT_TOKEN'
+-d "{
+      \"title\":       \"$WERCKER_DATADOG_EVENT_TITLE\",
+      \"text\":        \"$WERCKER_DATADOG_EVENT_TEXT\",
+      \"priority\":    \"$WERCKER_DATADOG_EVENT_PRIORITY\",
+      \"alert_type\":  \"$WERCKER_DATADOG_EVENT_ALERT_TYPE\"
+  }" \
+"https://app.datadoghq.com/api/v1/events?api_key=$WERCKER_DATADOG_EVENT_TOKEN"
