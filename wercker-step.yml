@@ -1,0 +1,23 @@
+name: datadog-event
+version: 1.0.0
+description: Send an event to datadog
+keywords:
+  - notification
+  - event
+  - datadog
+properties:
+  token:
+    type: string
+    required: true
+  title:
+    type: string
+    required: true
+  text:
+    type: string
+    required: true
+  alert_type:
+    type: string
+    default: "success"
+  priority:
+    type: string
+    default: "low"
